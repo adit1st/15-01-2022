@@ -15,11 +15,11 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('posts') }}" :active="request()->routeIs('posts')">
-                        {{ __('Schedule') }}
+                    <x-jet-nav-link href="{{ route('mahasiswa') }}" :active="request()->routeIs('mahasiswa')">
+                        {{ __('Mahasiswa') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('competitions') }}" :active="request()->routeIs('competitions')">
-                        {{ __('Competitions') }}
+                    <x-jet-nav-link href="{{ route('matakuliah') }}" :active="request()->routeIs('matakuliah')">
+                        {{ __('Matakuliah') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -150,14 +150,14 @@
         </div>
 
         <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link href="{{ route('posts') }}" :active="request()->routeIs('posts')">
-                {{ __('Schedule') }}
+            <x-jet-responsive-nav-link href="{{ route('mahasiswa') }}" :active="request()->routeIs('mahasiswa')">
+                {{ __('Mahasiswa') }}
             </x-jet-responsive-nav-link>
         </div>
 
          <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link href="{{ route('competitions') }}" :active="request()->routeIs('competitions')">
-                {{ __('Competitions') }}
+            <x-jet-responsive-nav-link href="{{ route('matakuliah') }}" :active="request()->routeIs('matakuliah')">
+                {{ __('Matakuliah') }}
             </x-jet-responsive-nav-link>
         </div>
 

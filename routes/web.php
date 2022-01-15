@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\Posts;
-use App\Http\Livewire\Competitions;
+use App\Http\Livewire\Mahasiswa;
+use App\Http\Livewire\Matakuliah;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +25,9 @@ Route::group(['middleware' => 'auth:sanctum', 'verified'], function (){
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/posts', Posts::class)->name('posts');
+    Route::get('/mahasiswa', Mahasiswa::class)->name('mahasiswa');
     
-    Route::get('/competitions', Competitions::class)->name('competitions');
+    Route::get('/matakuliah', Matakuliah::class)->name('matakuliah');
 });
 
 
